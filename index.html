@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="src/output.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <!-- Header/Navbar -->
     <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-gray-900/30">
@@ -15,9 +17,11 @@
                 <!-- Brand -->
                 <div class="flex items-center space-x-3">
                     <!-- Logo -->
-                    <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg">
                         <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 4,12A8,8 0 0,1 12,20A8,8 0 0,1 20,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 4,12A8,8 0 0,1 12,20A8,8 0 0,1 20,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" />
                         </svg>
                     </div>
                     <!-- Site Name -->
@@ -25,36 +29,46 @@
                         4CornersEatery
                     </div>
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center justify-center flex-1 space-x-8">
-                    <a href="#home" id="nav-home" class="nav-link text-white hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Home</a>
-                    <a href="#about" id="nav-about" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">About</a>
-                    <a href="#menu" id="nav-menu" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Menu</a>
-                    <a href="#contact" id="nav-contact" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Contact</a>
+                    <a href="#home" id="nav-home"
+                        class="nav-link text-white hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Home</a>
+                    <a href="#about" id="nav-about"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">About</a>
+                    <a href="#menu" id="nav-menu"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Menu</a>
+                    <a href="#contact" id="nav-contact"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Contact</a>
                 </div>
-                
+
                 <!-- Login Button -->
                 <!-- <button class="hidden md:block px-6 py-2 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transform hover:scale-105 transition-all duration-300 shadow-lg">
                     Login
                 </button> -->
-                
+
                 <!-- Mobile Hamburger Menu -->
                 <button id="hamburger" class="md:hidden focus:outline-none">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
             </div>
-            
+
             <!-- Mobile Navigation -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="#home" class="text-white hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Home</a>
-                    <a href="#about" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">About</a>
-                    <a href="#menu" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Menu</a>
-                    <a href="#contact" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Contact</a>
+                    <a href="#home"
+                        class="text-white hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Home</a>
+                    <a href="#about"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">About</a>
+                    <a href="#menu"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Menu</a>
+                    <a href="#contact"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Contact</a>
                 </div>
             </div>
         </nav>
@@ -64,12 +78,12 @@
     <section id="home" class="relative min-h-screen overflow-hidden">
         <!-- Dark Black Luxury Background -->
         <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-950"></div>
-        
+
         <!-- Sweet Yellow Abstract Shapes for Depth -->
         <div class="absolute top-20 left-10 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/10 rounded-full blur-3xl"></div>
         <div class="absolute top-1/2 left-1/3 w-80 h-80 bg-yellow-200/10 rounded-full blur-2xl"></div>
-        
+
         <!-- Two-Column Layout -->
         <div class="relative z-10 container mx-auto px-6 py-20">
             <div class="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
@@ -78,60 +92,59 @@
                     <h1 class="text-6xl md:text-7xl lg:text-8xl font-black mb-8 text-white leading-tight">
                         Delight
                     </h1>
-                    
+
                     <!-- Short Paragraph -->
                     <p class="text-lg md:text-xl text-gray-100 mb-12 leading-relaxed max-w-lg">
-                        Discover exceptional culinary creations. Fresh ingredients, bold flavors, and the perfect dining atmosphere await you at 4CornersEatery.
+                        Discover exceptional culinary creations. Fresh ingredients, bold flavors, and the perfect dining
+                        atmosphere await you at 4CornersEatery.
                     </p>
-                    
+
                     <!-- Circular Food Images -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                         <div class="group cursor-pointer">
-                            <img src="/images/rice.jpg" 
-                                 alt="Pancakes" 
-                                 class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
-                                 onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Pancakes'">
+                            <img src="/images/rice.jpg" alt="Pancakes"
+                                class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
+                                onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Pancakes'">
                         </div>
                         <div class="group cursor-pointer">
-                            <img src="/images/fish.jpg" 
-                                 alt="Coffee" 
-                                 class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
-                                 onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Coffee'">
+                            <img src="/images/fish.jpg" alt="Coffee"
+                                class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
+                                onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Coffee'">
                         </div>
                         <div class="group cursor-pointer">
-                            <img src="/images/drink.jpg" 
-                                 alt="Eggs Benedict" 
-                                 class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
-                                 onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Eggs'">
+                            <img src="/images/drink.jpg" alt="Eggs Benedict"
+                                class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
+                                onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Eggs'">
                         </div>
                         <div class="group cursor-pointer">
-                            <img src="/images/okra.jpg" 
-                                 alt="Waffles" 
-                                 class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
-                                 onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Waffles'">
+                            <img src="/images/okra.jpg" alt="Waffles"
+                                class="w-full h-24 md:h-32 object-cover rounded-full border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
+                                onerror="this.src='https://via.placeholder.com/200x200/facc15/ffffff?text=Waffles'">
                         </div>
                     </div>
-                    
+
                     <!-- Modern Search Bar -->
                     <div class="relative max-w-md">
-                        <input type="text" 
-                               placeholder="Search food items..." 
-                               class="w-full px-6 py-4 pl-14 bg-white/90 backdrop-blur-sm rounded-full text-black placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 transition-all duration-300">
-                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        <input type="text" placeholder="Search food items..."
+                            class="w-full px-6 py-4 pl-14 bg-white/90 backdrop-blur-sm rounded-full text-black placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-yellow-400/50 transition-all duration-300">
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
                     </div>
                 </div>
-                
+
                 <!-- Right Side Large Image -->
                 <div class="lg:pl-12 flex items-center justify-center">
                     <div class="relative group">
-                        <img src="/images/food.jpg" 
-                             alt="Food Spread" 
-                             class="w-full max-w-md lg:max-w-full h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://via.placeholder.com/600x800/facc15/ffffff?text=Food+Spread'">
+                        <img src="/images/food.jpg" alt="Food Spread"
+                            class="w-full max-w-md lg:max-w-full h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.src='https://via.placeholder.com/600x800/facc15/ffffff?text=Food+Spread'">
                         <!-- Overlapping Effect -->
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-2xl shadow-xl -z-10 lg:block hidden"></div>
+                        <div
+                            class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-2xl shadow-xl -z-10 lg:block hidden">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,8 +152,136 @@
     </section>
 
     <!-- Menu Section DOUBLE-T -->
-    <section id="menu">
-        <h2>Menu Section</h2>
+    <section id="menu" class="relative py-24 bg-black overflow-hidden">
+        <!-- Optional dark gradient base -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-gray-950 to-black pointer-events-none"></div>
+
+        <div class="relative z-10 py-20 container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mt-16 mb-16">
+                <span
+                    class="inline-block text-yellow-400 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-3">Culinary
+                    Excellence</span>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4">
+                    Our <span class="text-yellow-400">Menu</span>
+                </h2>
+                <div class="flex items-center justify-center gap-3 mt-5">
+                    <div class="h-px w-16 bg-yellow-400/40"></div>
+                    <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                    <div class="h-px w-16 bg-yellow-400/40"></div>
+                </div>
+            </div>
+
+            <!-- Responsive Grid: 1 col on mobile, 2 cols on tablet, 4 cols on desktop -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300 flex flex-col group hover:-translate-y-1 hover:shadow-xl">
+                    <div class="relative h-56 w-full shrink-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&h=400&fit=crop"
+                            alt="Peppery Okra Soup"
+                            class="block w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.src='https://placehold.co/600x400/111827/facc15?text=Okra+Soup'">
+                    </div>
+                    <!-- Added padding p-8 -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                                Peppery Okra Soup</h3>
+                            <span class="text-yellow-400 font-black text-lg ml-3 shadow-sm pt-0.5">&#8358;2,500</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow pt-2">Rich, spiced okra broth
+                            with
+                            tender pieces of fish and crayfish.</p>
+                        <!-- Added py-3.5 and hover effects to button -->
+                        <button
+                            class="w-full py-3.5 rounded-lg border border-yellow-400 text-yellow-400 font-bold text-sm bg-transparent hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">Order
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300 flex flex-col group hover:-translate-y-1 hover:shadow-xl">
+                    <div class="relative h-56 w-full shrink-0 overflow-hidden">
+                        <!-- Descriptive image for Grilled Tilapia -->
+                        <img src="https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?q=80&w=600&h=400&fit=crop"
+                            alt="Grilled Tilapia"
+                            class="block w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.src='https://placehold.co/600x400/111827/facc15?text=Grilled+Tilapia'">
+                    </div>
+                    <!-- Added padding p-8 -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                                Grilled Tilapia</h3>
+                            <span class="text-yellow-400 font-black text-lg ml-3 shadow-sm pt-0.5">&#8358;5,800</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow pt-2">Whole tilapia grilled to
+                            perfection with our signature pepper sauce.</p>
+                        <!-- Added py-3.5 and hover effects to button -->
+                        <button
+                            class="w-full py-3.5 rounded-lg border border-yellow-400 text-yellow-400 font-bold text-sm bg-transparent hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">Order
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300 flex flex-col group hover:-translate-y-1 hover:shadow-xl">
+                    <div class="relative h-56 w-full shrink-0 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&h=400&fit=crop"
+                            alt="Jollof Rice Royale"
+                            class="block w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.src='https://placehold.co/600x400/111827/facc15?text=Jollof+Rice'">
+                    </div>
+                    <!-- Added padding p-8 -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                                Jollof Rice Royale</h3>
+                            <span class="text-yellow-400 font-black text-lg ml-3 shadow-sm pt-0.5">&#8358;3,500</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow pt-2">Party-style Jollof
+                            slow-cooked
+                            with a smoky tomato and spice blend.</p>
+                        <!-- Added py-3.5 and hover effects to button -->
+                        <button
+                            class="w-full py-3.5 rounded-lg border border-yellow-400 text-yellow-400 font-bold text-sm bg-transparent hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">Order
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-yellow-400/40 transition-all duration-300 flex flex-col group hover:-translate-y-1 hover:shadow-xl">
+                    <div class="relative h-56 w-full shrink-0 overflow-hidden">
+                        <!-- Descriptive image for Spicy Goat/Asun -->
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&h=400&fit=crop"
+                            alt="Spicy Goat Meat"
+                            class="block w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.src='https://placehold.co/600x400/111827/facc15?text=Peppered+Goat'">
+                    </div>
+                    <!-- Added padding p-8 -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                                Peppered Goat Meat</h3>
+                            <span class="text-yellow-400 font-black text-lg ml-3 shadow-sm pt-0.5">&#8358;6,500</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow pt-2">Tender slow-cooked goat
+                            stew
+                            with layers of aromatic pepper and spice.</p>
+                        <!-- Added py-3.5 and hover effects to button -->
+                        <button
+                            class="w-full py-3.5 rounded-lg border border-yellow-400 text-yellow-400 font-bold text-sm bg-transparent hover:bg-yellow-400 hover:text-black hover:scale-105 transition-all duration-300">Order
+                            Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- About Section JOHN -->
@@ -153,9 +294,115 @@
         <h2>Contact Section</h2>
     </section>
 
-    <!-- Footer Section DOUBLE-T --> 
-    <footer id="footer">
-        <h2>Footer Section</h2>
+    <!-- Footer Section DOUBLE-T -->
+    <footer id="footer" class="bg-black text-gray-300 border-t border-gray-800 py-4 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+                <!-- Brand & Description -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="#" class="flex items-center space-x-3 mb-6">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg">
+                            <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 4,12A8,8 0 0,1 12,20A8,8 0 0,1 20,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" />
+                            </svg>
+                        </div>
+                        <div class="text-2xl font-bold text-yellow-400 tracking-wider">
+                            4CornersEatery
+                        </div>
+                    </a>
+                    <p class="text-sm leading-relaxed text-gray-400 max-w-sm">
+                        Experience the finest selection of indigenous delicacies and continental dishes, crafted with
+                        passion and served in a luxurious ambiance.
+                    </p>
+                    <div class="flex gap-4 mt-8">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400 hover:text-black transition-colors"
+                            aria-label="Twitter">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400 hover:text-black transition-colors"
+                            aria-label="Instagram">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Explore</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#home" class="hover:text-yellow-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400 transition-colors">Our Story</a></li>
+                        <li><a href="#menu" class="hover:text-yellow-400 transition-colors">Menu</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-400 text-base leading-none translate-y-0.5">📍</span>
+                            <span>123 Culinary Avenue,<br>Victoria Island, Lagos.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-400 text-base leading-none">📞</span>
+                            <span>+234 813 345 4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-400 text-base leading-none">✉️</span>
+                            <span>hello@4corners.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex justify-between border-b border-gray-800 pb-2">
+                            <span>Mon - Fri</span>
+                            <span class="text-white">8:00 AM - 10:00 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-800 pb-2">
+                            <span>Saturday</span>
+                            <span class="text-white">9:00 AM - 11:30 PM</span>
+                        </li>
+                        <li class="flex justify-between border-gray-800 pb-2">
+                            <span>Sunday</span>
+                            <span class="text-white">10:00 AM - 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm text-gray-500">&copy; 2024 4Corners Eatery. All rights reserved.</p>
+
+                <!-- Back to top button (Aligned Right in Footer) -->
+                <a href="#"
+                    class="w-12 h-12 rounded-full border border-yellow-400 bg-black text-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black hover:scale-110 hover:shadow-[0_0_15px_rgba(250,204,21,0.3)] transition-all duration-300"
+                    aria-label="Back to top">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <style>
@@ -164,15 +411,17 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .animate-fade-in-up {
             animation: fade-in-up 1.2s ease-out;
         }
     </style>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     const hamburgerIcon = document.getElementById('hamburger-icon');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => {
             link.classList.remove('text-amber-500', 'bg-amber-500/20');
             link.classList.add('text-gray-300');
-            
+
             const linkId = link.getAttribute('id').replace('nav-', '');
             if (linkId === current) {
                 link.classList.remove('text-gray-300');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', updateActiveNav);
     updateActiveNav(); // Initial call
 
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
         hamburgerIcon.classList.toggle('hidden');
         closeIcon.classList.toggle('hidden');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close mobile menu when clicking on any navigation link
     mobileNavLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             mobileMenu.classList.add('hidden');
             hamburgerIcon.classList.remove('hidden');
             closeIcon.classList.add('hidden');
