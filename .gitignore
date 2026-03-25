@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# IDE settings
+.vscode/
+
+# Build outputs
+# src/output.css (Uncomment if you want to exclude compiled CSS)
+
+# System files
+.DS_Store
+Thumbs.db
