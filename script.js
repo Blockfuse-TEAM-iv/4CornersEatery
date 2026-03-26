@@ -56,3 +56,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
    
 });
+  const btn = document.getElementById("dropdownBtn");
+  const menu = document.getElementById("dropdownMenu");
+  const text = document.getElementById("selectedText");
+  const input = document.getElementById("serviceInput");
+  const arrow = document.getElementById("arrow");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  document.querySelectorAll("#dropdownMenu div").forEach(item => {
+    item.addEventListener("click", () => {
+      text.textContent = item.textContent;
+      text.classList.remove("text-gray-400");
+      text.classList.add("text-white");
+      input.value = item.dataset.value;
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    }
+  });
