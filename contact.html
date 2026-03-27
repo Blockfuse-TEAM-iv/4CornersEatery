@@ -9,35 +9,68 @@
   </head>
 
   <body class="bg-black text-white">
-    <!-- Header/Navbar -->
+     <!-- Header/Navbar -->
     <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-gray-900/30">
-      <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-        <!-- Brand -->
-        <div class="flex items-center space-x-3">
-          <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg">
-            <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 4,12A8,8 0 0,1 12,20A8,8 0 0,1 20,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/>
-            </svg>
-          </div>
-          <div class="text-2xl font-bold text-yellow-400 tracking-wider">4CornersEatery</div>
-        </div>
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Brand -->
+                <div class="flex items-center space-x-3">
+                    <!-- Logo -->
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-lg flex items-center justify-center shadow-lg">
+                        <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 4,12A8,8 0 0,1 12,20A8,8 0 0,1 20,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" />
+                        </svg>
+                    </div>
+                    <!-- Site Name -->
+                    <div class="text-2xl font-bold text-yellow-400 tracking-wider">
+                        4CornersEatery
+                    </div>
+                </div>
 
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center justify-center flex-1 space-x-8">
-          <a href="index.html" class="nav-link text-white hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Home</a>
-          <a href="about.html" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">About</a>
-          <a href="menu.html" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Menu</a>
-          <a href="contact.html" class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Contact</a>
-        </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center justify-center flex-1 space-x-8">
+                    <a href="index.html" id="nav-home"
+                        class="nav-link text-white hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Home</a>
+                    <a href="about.html" id="nav-about"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">About</a>
+                    <a href="menu.html" id="nav-menu"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Menu</a>
+                    <a href="contact.html" id="nav-contact"
+                        class="nav-link text-gray-300 hover:text-yellow-400 transition-all duration-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10">Contact</a>
+                </div>
 
-        <!-- Mobile Hamburger Menu -->
-        <button id="hamburger" class="md:hidden focus:outline-none">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </nav>
+                <!-- Login Button -->
+                <!-- <button class="hidden md:block px-6 py-2 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    Login
+                </button> -->
+
+                <!-- Mobile Hamburger Menu -->
+                <button id="hamburger" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html"
+                        class="text-white hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Home</a>
+                    <a href="about.html"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">About</a>
+                    <a href="menu.html"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Menu</a>
+                    <a href="contact.html"
+                        class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium py-2 mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
